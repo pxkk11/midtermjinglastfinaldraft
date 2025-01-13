@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LuxShoesry</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
+</head> 
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="promotions.html">Promotions</a>
+    <a href="products.html">Products</a>
+    <a href="howtopurchase.html">How to Purchase</a>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+  <div class="logo-container">
+    <img src="logo.png" alt="LuxShoesry Logo" class="logo">
+  </div>
+
+  <h1>Welcome to LuxShoesry</h1>
+  <p>ค้นหารองเท้าที่ตอบโจทย์ เรามีรองเท้าหลากหลายแบรนด์ให้เลือกพร้อมโปรโมชั่นพิเศษที่จะทำให้การช้อปปิ้งสนุกและคุ้มค่า! เลือกเลย!!!! </p>
+  
+  <h2>Featured Products</h2>
+
+<div class="product-container">  
+  <!-- Lightbox Implementation -->
+  <div class="product">
+    <a href="#lightbox1">
+      <img src="adizero.png" alt="Shoe 1">
+    </a>
+    <p>Adidas - Adizero Takumi Sen 10 Shoes  4890฿</p>
+  </div>
+  
+  <div id="lightbox1" class="lightbox">
+    <a href="#_">
+      <img src="adizero.png" alt="Shoe 1 Enlarged">
+    </a>
+  </div>
+
+  <div class="product">
+    <a href="#lightbox2">
+      <img src="crocs.webp" alt="Shoe 2">
+    </a>
+    <p>Crocs - MEGA CRUSH CLOG <br>2590฿</p>
+  </div>
+
+  <div id="lightbox2" class="lightbox">
+    <a href="#_">
+      <img src="crocs.webp" alt="Shoe 2 Enlarged">
+    </a>
+  </div>
+
+  <div class="product">
+    <a href="#lightbox3">
+      <img src="oncloud.avif" alt="Shoe 3">
+    </a>
+    <p>OnCloud - THE ROGER Centre Court <br> 5790฿</p>
+  </div>
+
+  <div id="lightbox3" class="lightbox">
+    <a href="#_">
+      <img src="oncloud.avif" alt="Shoe 3 Enlarged">
+    </a>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-image" src="" alt="">
+</div>
+
+</body>
+</html>

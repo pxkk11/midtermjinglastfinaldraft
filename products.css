@@ -1,0 +1,120 @@
+body { 
+    font-family: 'Krub', serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Enables flexbox */
+    flex-direction: column;/* Aligns items in a column */
+    background-color:#ebe8e8;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+}
+
+nav {
+    background-color: #413f3d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #ded7d6;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #665d5d;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.product img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex; /* Show when active */
+}
+
+.lightbox img {
+    width: 700px; /* Fixed size for all images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product.coming-soon {
+    border: 1px solid #cec4c4; /* Add border around product */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center alignment */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for background */
+}
+
+.coming-soon {
+   display:block; /* Initially visible */
+   border :2px solid #ccc; /* Add border */
+   border-radius :5px; /* Rounded corners */
+   overflow:hidden; /* Prevent overflow */
+}

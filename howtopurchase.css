@@ -1,0 +1,61 @@
+body { 
+    font-family: 'Krub', serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Enables flexbox */
+    flex-direction: column;/* Aligns items in a column */
+    background-color:#ebe8e8;
+}
+
+nav {
+    background-color: #413f3d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: static;
+}
+nav a {
+    color: #ded7d6;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #555;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+.krub-regular {
+    font-family: "Krub", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+ol {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+ol li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+ol li img {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
